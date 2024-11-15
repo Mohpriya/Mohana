@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body  {
+      background-size: 300px;
+      max-width: fit-content;
+      max-height: fit-content;
+      background-color: blue;
+    }
+    div {
+  border: solid 3px;
+  padding: 1em;
+  max-width: 75%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8em;
+}
+#cent {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-50px; /* this is half the height of your div*/  
+  margin-left:-100px; /*this is half of width of your div*/
+}
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+    </style>
+<body>
+    <h1><center>Sign Up</center></h1>
+    <form action="" method="get">
+        <div class="container">
+            <div class="item">
+                <label>Username</label>
+                <input type="text" placeholder="Enter your name"><br><br>
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password"><br><br>
+                <label>Conform password</label>
+                <input type="conform password" placeholder="Enter your password"><br><br>
+                <button>Submit</button></div>
+          </div>
+</body>
+</html>
